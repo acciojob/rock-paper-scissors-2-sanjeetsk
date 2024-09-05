@@ -4,10 +4,39 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		#game-container {
+		  display: flex;
+		  flex-direction: column;
+		  align-items: center;
+		  margin-top: 20px;
+		}
+		.buttons {
+		  margin: 10px;
+		}
+	</style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	<div id="game-container">
+		<label for="turns">Enter number of turns: </label>
+		<input type="number" id="turns" data-ns-test="game-number">
+		<button id="play" data-ns-test="play-game">Play Game</button>
+		
+		<div class="buttons">
+		  <button id="rock" data-ns-test="rock">Rock</button>
+		  <button id="paper" data-ns-test="paper">Paper</button>
+		  <button id="scissors" data-ns-test="scissors">Scissors</button>
+		</div>
+	  
+		<p>Computer chooses: <span id="computer-choice" data-ns-test="computer-choose"></span></p>
+		<p>Round result: <span id="round-result" data-ns-test="round-result"></span></p>
+		<p>Rounds left: <span id="rounds-left" data-ns-test="rounds-left"></span></p>
+		<p>User points: <span id="user-points" data-ns-test="user-points">0</span></p>
+		<p>Computer points: <span id="computer-points" data-ns-test="computer-points">0</span></p>
+		<p>Game result: <span id="game-result" data-ns-test="game-result"></span></p>
+	</div>
     <script type="text/javascript" src="./script.js">
 </script>
 
